@@ -113,7 +113,8 @@ PID      UIN            状态         备注
 ## 回滚
 
 ```powershell
-Copy-Item "D:\SnowLuma\index.mjs.bak-20261112-193535" "D:\SnowLuma\index.mjs" -Force
+# <SnowLuma> 换成你的安装目录，<时间戳> 换成实际备份名
+Copy-Item "<SnowLuma>\index.mjs.bak-<时间戳>" "<SnowLuma>\index.mjs" -Force
 ```
 
 然后重启 SnowLuma 即可。
