@@ -188,7 +188,7 @@ Say "SnowLuma Login-Probe Fix v$ScriptVersion" 'Cyan'
 $root = Resolve-SnowLumaRoot -Hint $Path
 if (-not $root) {
   Say '× 没找到 SnowLuma 目录（需要包含 index.mjs）。请用 -Path 指定，例如：' 'Red'
-  Say '  powershell -ExecutionPolicy Bypass -File .\SnowLuma-LoginProbe-Fix.ps1 -Path "D:\SnowLuma"' 'Yellow'
+  Say '  powershell -ExecutionPolicy Bypass -File .\SnowLuma-LoginProbe-Fix.ps1 -Path "X:\Apps\SnowLuma"' 'Yellow'
   Say '  也可以先设置环境变量 SNOWLUMA_HOME 指向该目录。' 'Yellow'
   exit 1
 }
