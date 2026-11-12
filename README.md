@@ -23,7 +23,7 @@ https://127.0.0.1:4301/pt_get_uins?callback=ptui_getuins_CB&pt_local_tk=0
 返回长这样：
 
 ```js
-var var_sso_uin_list=[{"uin":29003269,...},{"uin":2312821679,...,"nickname":"..."}];
+var var_sso_uin_list=[{"uin":12345678,...},{"uin":87654321,...,"nickname":"..."}];
 ```
 
 而 `tryPtloginMethod()` 里写死了：
@@ -75,8 +75,8 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\SnowLuma-LoginProbe-Fix.ps
 ```
 PID      UIN            状态         备注
 -------  -------------  ----------   ----
-19480    29003269       online
-21792    2312821679     available
+1234     12345678        online
+5678     87654321        available
 
 √ 成功识别 2/2 个 QQ 进程的账号
 ```
